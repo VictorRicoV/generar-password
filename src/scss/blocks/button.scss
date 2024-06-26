@@ -1,4 +1,4 @@
-@use "../mixins/hover.scss" as *;
+@use '../mixins/hover.scss' as *;
 .button {
   height: 60px;
   width: 100%;
@@ -10,8 +10,9 @@
   font-size: 1rem;
   letter-spacing: 3px;
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.2s;
+  transition: scale 0.2s, background-color 0.2s;
   @include hover {
     background-color: var(--cta-color-hover);
+    scale: 0.95;
   }
 }
