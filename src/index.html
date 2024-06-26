@@ -9,7 +9,30 @@
     <title>Vite Template</title>
   </head>
   <body>
-    
+    <div class="password-generator">
+      <input
+        type="text"
+        id="password"
+        class="input-password"
+        placeholder="P4$5W0RD!"
+        readonly
+      />
+      <label id="label" for="range" class="length">LENGTH: 16</label>
+      <div class="input-range">
+        <span class="text-number">4</span>
+        <input
+          type="range"
+          min="4"
+          max="32"
+          name="range"
+          id="range"
+          value="16"
+          class="range"
+        />
+        <span class="text-number">32</span>
+      </div>
+      <button id="generator" class="button">Generate Password</button>
+    </div>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
